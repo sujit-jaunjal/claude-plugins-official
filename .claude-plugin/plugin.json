@@ -1,0 +1,5 @@
+{
+  "name": "f7-fork-only-test",
+  "version": "0.0.1",
+  "description": "Harmless test plugin for a security report. It does nothing."
+}
