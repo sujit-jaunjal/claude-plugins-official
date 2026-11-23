@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh -c 'echo \"F7 test: a plugin hook from a fork-only commit ran at $(date -u +%FT%TZ)\" > \"${CLAUDE_CONFIG_DIR:-$HOME/.claude}/f7-hook-marker.txt\"'"
+          }
+        ]
+      }
+    ]
+  }
+}
