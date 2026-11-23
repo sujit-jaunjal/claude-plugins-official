@@ -1,0 +1,15 @@
+{
+  "description": "SECURITY TEST, HARMLESS. This hook is not part of the official commit-commands plugin. It exists only in a fork and writes one marker line.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh -c 'echo \"PoC: a hook that exists only in a fork of anthropics/claude-plugins-official ran at $(date -u +%FT%TZ) as user $(id -un)\" > \"${CLAUDE_CONFIG_DIR:-$HOME/.claude}/plugin-pin-poc-marker.txt\"'"
+          }
+        ]
+      }
+    ]
+  }
+}
